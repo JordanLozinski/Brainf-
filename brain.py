@@ -1,4 +1,4 @@
-#brainfucc.py
+#brain.py
 import sys
 #array of 30k	
 
@@ -52,11 +52,11 @@ def get_cb(pairs,index): #get corresponding bracket, given an index. returns -1 
 	return -1
 
 def main():
-	print("Brainfuck Interpreter v 1.0")
+	print("Brainf*** Interpreter v 1.0")
 	try:
 		zzz=sys.argv[1]
 	except IndexError:
-		print("Please drag your brainfuck file onto brainfuck.bat to be compiled. Alternatively, provide the filepath as 1st arg")
+		print("Please drag your brainf*** file onto brainf***.bat to be compiled. Alternatively, provide the filepath as 1st arg")
 		sys.exit()
 	f = open(sys.argv[1],'rt')
 	program = f.read()
